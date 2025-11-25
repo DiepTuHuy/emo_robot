@@ -11,7 +11,6 @@ class SpeechToText:
             log("STT", f"Error init Groq: {e}")
 
     def transcribe(self, audio_filename):
-        """Gửi file audio lên Groq để dịch sang chữ (Siêu tốc)"""
         if not audio_filename or not os.path.exists(audio_filename):
             return None
             
