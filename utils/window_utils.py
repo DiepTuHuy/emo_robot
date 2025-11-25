@@ -16,7 +16,7 @@ def set_always_on_top():
                 0, 0, 0, 0, 
                 win32con.SWP_NOMOVE | win32con.SWP_NOSIZE
             )
-            print("[SYSTEM] Đã ghim Emo lên màn hình.")
+            print("[SYSTEM] Đã ghim Fia lên màn hình.")
             
         except Exception as e:
             print(f"[SYSTEM] Lỗi khi ghim cửa sổ (Cần cài pywin32): {e}")

@@ -3,4 +3,5 @@ class EyeState:
     HAPPY = "happy"
     SAD = "sad"
     ANGRY = "angry"
-    BLINK = "blink"
+    DISDAIN = "disdain"
+    SCARE = "scare"

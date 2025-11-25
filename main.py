@@ -12,8 +12,8 @@ import win32api
 import win32gui
 import win32con
 
-from eyes.eyes import Eyes
-from eyes.eye_state import EyeState
+from assets.eyes import Eyes
+from assets.eye_state import EyeState
 from face import FaceDetector
 from robot import Brain 
 from voice.text_to_speech import TextToSpeech 
@@ -107,7 +107,7 @@ def conversation_flow():
                         elif val.isdigit():
                             num = int(val)
                             music_player.set_volume(num)
-                            mouth.speak(f"Đã chỉnh âm lượng về {num} phần trăm.")
+                            mouth.speak(f"Đã chỉnh âm lượng thành {num} phần trăm.")
                         sentence_buffer = re.sub(r"\[VOL:.*?\]", "", sentence_buffer)
 
                     stop_match = re.search(r"\[STOP_MUSIC\]", sentence_buffer, re.IGNORECASE)
@@ -153,7 +153,7 @@ def run():
     try: pygame.mixer.init(frequency=24000) 
     except: pass
     
-    log("SYSTEM", "Khởi động Emo Robot (Draggable)...")
+    log("SYSTEM", "Khởi động Fia Robot (Draggable)...")
 
     screen = pygame.display.set_mode(
         (config.SCREEN_WIDTH, config.SCREEN_HEIGHT), 
