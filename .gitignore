@@ -3,6 +3,5 @@ __pycache__/
 *.mp3
 *.wav
 *.exe
-*.mp4
 temp_music.*
 temp_input.*
