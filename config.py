@@ -1,6 +1,9 @@
 import os
+from dotenv import load_dotenv
 
-GEMINI_API_KEY = "AIzaSyDVQG8aFqvmnfUZDjerI_W9niLOWhvzEYg"
+load_dotenv()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 SCREEN_WIDTH = 240
 SCREEN_HEIGHT = 240
 FPS = 60

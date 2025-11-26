@@ -1,7 +1,10 @@
 class EyeState:
-    IDLE = "idle"
+    IDLE = "idle"         
     HAPPY = "happy"
     SAD = "sad"
     ANGRY = "angry"
     DISDAIN = "disdain"
-    SCARE = "scare"
+    SCARE = "scare"       
+    LISTENING = "idle"   
+    THINKING = "idle" 
+    SLEEP = "idle"
